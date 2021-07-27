@@ -1,0 +1,202 @@
+$main-bg-color:#F1F1F1 ;
+$header-bg-color: #212529 ;
+$card-bg-color: #fcfbfb;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-header {
+    padding: 15px 20px;
+    background: $main-bg-color;
+    z-index: 0;
+    position: relative;
+}
+.dropdown-menu-custom {
+    position: absolute;
+    z-index: 1000;
+    padding: 0 15px 20px 0 !important; 
+}
+.dropdown-list {
+    display: none;
+    transition: display 0.5s ease !important;
+    list-style: none;
+    background: $header-bg-color;
+    padding-left: 0;
+}
+.dropdown-list li a {
+    color: #f1f1f1;
+}
+
+#drop-btn {
+    padding: 10px 15px;
+    border-radius: 2%;
+
+}
+
+
+
+.fa-chevron-down {
+    padding-left: 5px;
+}
+.fa-cog {
+    padding: 0 3px;
+}
+
+.show {
+    display: block;
+    transition: display 0.5s ease !important;
+}
+
+.breadcrumb {
+    background: #d3d2d2;
+}
+
+.card-header {
+    background: $header-bg-color;
+    color: #ddd;
+}
+
+.overview-card .row {
+    height: min-content;
+    padding: 2rem 1rem ;
+}
+
+.well {
+    background: $main-bg-color;
+    margin: 0 0.5rem;
+    padding: 1.5rem 0;
+}
+
+.progress-card {
+    background: #fcfbfb;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+.card {
+    background: $card-bg-color;
+
+}
+.card ul li:hover {
+    cursor: pointer ;
+    background: $card-bg-color;
+}
+
+.active-card {
+    background: $header-bg-color;
+    color: #fff;
+}
+
+.form-group {
+    padding: 15px 0;
+}
+
+.login-card {
+    background: $card-bg-color;
+}
+
+.footer {
+    background: $header-bg-color;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .custom-nav {
+        display: flex !important;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    .main-header {
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .dropdown-menu-custom {
+        position: static;
+        width: 100%;
+    }
+    #drop-btn {
+        display: inline;
+        width: 100%;
+    }
+
+    .welcome {
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+    .welcome {
+        padding-bottom: 15px;
+    }
+
+    .main-header {
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .dash-heading {
+        padding-bottom: 1rem;
+    }
+
+    .dropdown-menu-custom {
+        position: static;
+        width: 90%;
+        margin: auto;
+    }
+
+    #drop-btn {
+        display: inline;
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width:768px) {
+    .welcome {
+        padding-bottom: 15px;
+    }
+    .main-header {
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .dash-heading {
+        padding-bottom: 1rem ;
+    }
+
+    .dropdown-menu-custom {
+        position: static;
+        width: 80%;
+        margin: auto;
+    }
+
+    #drop-btn {
+        display: inline-block;
+        width: 100%;
+    }
+}
